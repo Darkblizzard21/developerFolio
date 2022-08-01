@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.00b1896c.chunk.css",
-    "main.js": "/static/js/main.0e385c86.chunk.js",
-    "main.js.map": "/static/js/main.0e385c86.chunk.js.map",
+    "main.js": "/static/js/main.4fe04a3f.chunk.js",
+    "main.js.map": "/static/js/main.4fe04a3f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f771dd25.js",
     "runtime-main.js.map": "/static/js/runtime-main.f771dd25.js.map",
-    "static/js/2.7ffd6826.chunk.js": "/static/js/2.7ffd6826.chunk.js",
-    "static/js/2.7ffd6826.chunk.js.map": "/static/js/2.7ffd6826.chunk.js.map",
+    "static/js/2.59878b93.chunk.js": "/static/js/2.59878b93.chunk.js",
+    "static/js/2.59878b93.chunk.js.map": "/static/js/2.59878b93.chunk.js.map",
     "static/css/3.be868372.chunk.css": "/static/css/3.be868372.chunk.css",
     "static/js/3.a3670f43.chunk.js": "/static/js/3.a3670f43.chunk.js",
     "static/js/3.a3670f43.chunk.js.map": "/static/js/3.a3670f43.chunk.js.map",
@@ -14,12 +14,12 @@
     "static/js/4.2bfcfdca.chunk.js": "/static/js/4.2bfcfdca.chunk.js",
     "static/js/4.2bfcfdca.chunk.js.map": "/static/js/4.2bfcfdca.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b0d7cf29d060b2f6359cf54885d9fe65.js": "/precache-manifest.b0d7cf29d060b2f6359cf54885d9fe65.js",
+    "precache-manifest.985616f54d91d75cfa30cd34f848244b.js": "/precache-manifest.985616f54d91d75cfa30cd34f848244b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/3.be868372.chunk.css.map": "/static/css/3.be868372.chunk.css.map",
     "static/css/4.4065de73.chunk.css.map": "/static/css/4.4065de73.chunk.css.map",
     "static/css/main.00b1896c.chunk.css.map": "/static/css/main.00b1896c.chunk.css.map",
-    "static/js/2.7ffd6826.chunk.js.LICENSE.txt": "/static/js/2.7ffd6826.chunk.js.LICENSE.txt",
+    "static/js/2.59878b93.chunk.js.LICENSE.txt": "/static/js/2.59878b93.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/CV.pdf": "/static/media/CV.d60e2038.pdf",
     "static/media/Discord-Logo-Color.svg": "/static/media/Discord-Logo-Color.3437c105.svg",
@@ -82,8 +82,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f771dd25.js",
-    "static/js/2.7ffd6826.chunk.js",
+    "static/js/2.59878b93.chunk.js",
     "static/css/main.00b1896c.chunk.css",
-    "static/js/main.0e385c86.chunk.js"
+    "static/js/main.4fe04a3f.chunk.js"
   ]
 }
