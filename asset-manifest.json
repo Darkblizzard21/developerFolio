@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.27763b84.css",
-    "main.js": "/static/js/main.d42352b3.js",
+    "main.js": "/static/js/main.99b197d1.js",
     "static/css/64.03f2f07e.chunk.css": "/static/css/64.03f2f07e.chunk.css",
     "static/js/64.7fa9d91a.chunk.js": "/static/js/64.7fa9d91a.chunk.js",
     "static/css/769.ad5d6138.chunk.css": "/static/css/769.ad5d6138.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/rgb.webm": "/static/media/rgb.03c6431b59a64936352f.webm",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/fractalEngineLogo.webp": "/static/media/fractalEngineLogo.8599c4b0412ba801e964.webp",
-    "static/media/CV.pdf": "/static/media/CV.bed1c3f21f21ed85831a.pdf",
+    "static/media/CV.pdf": "/static/media/CV.d814ab93417e2e4b9742.pdf",
     "static/media/mmwge.webp": "/static/media/mmwge.617c549994a174b57d86.webp",
     "static/media/emptySpaces.webp": "/static/media/emptySpaces.87127556d0cab45a66b7.webp",
     "static/media/uniwue.webp": "/static/media/uniwue.985c9ca954923d956c23.webp",
@@ -43,12 +43,10 @@
     "static/media/ue4Desat.webp": "/static/media/ue4Desat.bb72debe55b288445e3c.webp",
     "static/media/skill.webp": "/static/media/skill.c9acb5848e8820694a10.webp",
     "static/media/unityDesat.webp": "/static/media/unityDesat.be2c9a1f180d80ecccad.webp",
-    "static/media/opengl.webp": "/static/media/opengl.01757703efa0c3bccf85.webp",
     "static/media/AMD_E_Wh_RGB.webp": "/static/media/AMD_E_Wh_RGB.08823fe795a63261083d.webp",
     "static/media/vs19.webp": "/static/media/vs19.0c59d0378376703f008f.webp",
     "static/media/unitySat.webp": "/static/media/unitySat.f285b0d3a456939c2b8d.webp",
     "static/media/Discord-Logo-Color.webp": "/static/media/Discord-Logo-Color.5e2627ece217f274bd41.webp",
-    "static/media/openglDesat.webp": "/static/media/openglDesat.89ceb629ecac59cd7165.webp",
     "static/media/WebGL_LogoDeSat.webp": "/static/media/WebGL_LogoDeSat.21292954054968978fbe.webp",
     "static/media/bii2.webp": "/static/media/bii2.a2133ccf917a36089bbc.webp",
     "static/media/balancingHub.webp": "/static/media/balancingHub.9dbf624b99519732dd12.webp",
@@ -64,7 +62,7 @@
     "static/media/blender_icon_64x64.webp": "/static/media/blender_icon_64x64.3f78adb3e8345a1d025e.webp",
     "static/media/talksCardBack.webp": "/static/media/talksCardBack.dec11d7d4269f8e56f9b.webp",
     "main.27763b84.css.map": "/static/css/main.27763b84.css.map",
-    "main.d42352b3.js.map": "/static/js/main.d42352b3.js.map",
+    "main.99b197d1.js.map": "/static/js/main.99b197d1.js.map",
     "64.03f2f07e.chunk.css.map": "/static/css/64.03f2f07e.chunk.css.map",
     "64.7fa9d91a.chunk.js.map": "/static/js/64.7fa9d91a.chunk.js.map",
     "769.ad5d6138.chunk.css.map": "/static/css/769.ad5d6138.chunk.css.map",
@@ -72,6 +70,6 @@
   },
   "entrypoints": [
     "static/css/main.27763b84.css",
-    "static/js/main.d42352b3.js"
+    "static/js/main.99b197d1.js"
   ]
 }
