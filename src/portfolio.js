@@ -189,12 +189,12 @@ https://fontawesome.com/icons?d=gallery */
   projects: [
     {
       description: "Ray Vis",
-      link: "./rayvis",
+      link: "./#/rayvis",
       skills: ["C++", "Visual Studio", "DirectX"]
     },
     {
       description: "GameLab III: Fractal Engine",
-      link: "./fractal-engine",
+      link: "./#/fractal-engine",
       skills: [
         "C++",
         "Visual Studio",
@@ -672,7 +672,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Project Page",
-          url: "./fractal-engine"
+          url: "./#/fractal-engine"
         },
         {
           name: "Watch Trailer",
@@ -768,7 +768,7 @@ const gameJams = {
       footerLink: [
         {
           name: "Project Page",
-          url: "./rayvis"
+          url: "./#/rayvis"
         },
         {
           name: "GitHub",
