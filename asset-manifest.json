@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.27763b84.css",
-    "main.js": "/static/js/main.37f71de3.js",
-    "static/css/64.03f2f07e.chunk.css": "/static/css/64.03f2f07e.chunk.css",
-    "static/js/64.7fa9d91a.chunk.js": "/static/js/64.7fa9d91a.chunk.js",
-    "static/css/769.ad5d6138.chunk.css": "/static/css/769.ad5d6138.chunk.css",
-    "static/js/769.cea9b36b.chunk.js": "/static/js/769.cea9b36b.chunk.js",
+    "main.css": "/static/css/main.48f52310.css",
+    "main.js": "/static/js/main.baaaca17.js",
+    "static/css/64.2cf67710.chunk.css": "/static/css/64.2cf67710.chunk.css",
+    "static/js/64.8378b87e.chunk.js": "/static/js/64.8378b87e.chunk.js",
+    "static/css/769.a18cb2b5.chunk.css": "/static/css/769.a18cb2b5.chunk.css",
+    "static/js/769.b158d92a.chunk.js": "/static/js/769.b158d92a.chunk.js",
     "static/media/EmptySpaces.webm": "/static/media/EmptySpaces.1e5d536173d047d9bbdc.webm",
     "static/media/HauntedForest.webm": "/static/media/HauntedForest.80dfcc0af939df6f2927.webm",
     "static/media/fractalWebSnippet.webm": "/static/media/fractalWebSnippet.90222e7555d1946732d6.webm",
@@ -13,12 +13,18 @@
     "static/media/boids.webm": "/static/media/boids.35f76659cb25778261b1.webm",
     "static/media/dada.webm": "/static/media/dada.6e4a2950b5f12fe208a9.webm",
     "static/media/balancingHub.webm": "/static/media/balancingHub.197cef79803038df7328.webm",
+    "static/media/rayvis-preview.webm": "/static/media/rayvis-preview.af110025f116738de03c.webm",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/example.webp": "/static/media/example.2a7faa1ec8d875c78ba5.webp",
     "static/media/rgb.webm": "/static/media/rgb.03c6431b59a64936352f.webm",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/fractalEngine.webp": "/static/media/fractalEngine.580b6e1ea199c231cf45.webp",
     "static/media/fractalEngineLogo.webp": "/static/media/fractalEngineLogo.8599c4b0412ba801e964.webp",
-    "static/media/CV.pdf": "/static/media/CV.d814ab93417e2e4b9742.pdf",
+    "static/media/CV.pdf": "/static/media/CV.6a60ce8cf5431c667f87.pdf",
     "static/media/mmwge.webp": "/static/media/mmwge.617c549994a174b57d86.webp",
+    "static/media/fractalEngine-tools.webp": "/static/media/fractalEngine-tools.0f350083499d1e39e687.webp",
+    "static/media/renderer.webp": "/static/media/renderer.29db3107f3cce0cbf057.webp",
+    "static/media/fractalEngine-gameplay.webp": "/static/media/fractalEngine-gameplay.359cab04916afbe4cc4a.webp",
     "static/media/emptySpaces.webp": "/static/media/emptySpaces.87127556d0cab45a66b7.webp",
     "static/media/uniwue.webp": "/static/media/uniwue.985c9ca954923d956c23.webp",
     "static/media/longLegs.webp": "/static/media/longLegs.b7aef92e9aab94517eeb.webp",
@@ -60,16 +66,17 @@
     "static/media/ndiDesat.webp": "/static/media/ndiDesat.f069ab0af0870bbcf4d4.webp",
     "static/media/js.webp": "/static/media/js.d22d1a26448001b46da0.webp",
     "static/media/blender_icon_64x64.webp": "/static/media/blender_icon_64x64.3f78adb3e8345a1d025e.webp",
+    "static/media/empty.webp": "/static/media/empty.8d45623b39a65aceca9d.webp",
     "static/media/talksCardBack.webp": "/static/media/talksCardBack.dec11d7d4269f8e56f9b.webp",
-    "main.27763b84.css.map": "/static/css/main.27763b84.css.map",
-    "main.37f71de3.js.map": "/static/js/main.37f71de3.js.map",
-    "64.03f2f07e.chunk.css.map": "/static/css/64.03f2f07e.chunk.css.map",
-    "64.7fa9d91a.chunk.js.map": "/static/js/64.7fa9d91a.chunk.js.map",
-    "769.ad5d6138.chunk.css.map": "/static/css/769.ad5d6138.chunk.css.map",
-    "769.cea9b36b.chunk.js.map": "/static/js/769.cea9b36b.chunk.js.map"
+    "main.48f52310.css.map": "/static/css/main.48f52310.css.map",
+    "main.baaaca17.js.map": "/static/js/main.baaaca17.js.map",
+    "64.2cf67710.chunk.css.map": "/static/css/64.2cf67710.chunk.css.map",
+    "64.8378b87e.chunk.js.map": "/static/js/64.8378b87e.chunk.js.map",
+    "769.a18cb2b5.chunk.css.map": "/static/css/769.a18cb2b5.chunk.css.map",
+    "769.b158d92a.chunk.js.map": "/static/js/769.b158d92a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27763b84.css",
-    "static/js/main.37f71de3.js"
+    "static/css/main.48f52310.css",
+    "static/js/main.baaaca17.js"
   ]
 }
