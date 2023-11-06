@@ -63,7 +63,6 @@ const projectPages = [
         text:
           "RayVis uses its own data format for saving and loading. " +
           "Each file contains one or multiple ray data sets and scene geometry. " +
-          "The original ray data is provided by Advanced Micro Devices (AMD) in an internal format and is converted into the RayVis data format. " +
           "Direct3D Raytracing is used for rendering the scene geometry and the mesh components of the visualizations. " +
           "For zhe volume visualization a separate compute-shader is used. " +
           "RayVis can render the scene model in six different shading modes or exclude the scene geometry completely rom rendering (see Image on the left).",
