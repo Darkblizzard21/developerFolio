@@ -4,11 +4,9 @@ import {useLocalStorage} from "../hooks/useLocalStorage";
 import ProjectHeader from "./ProjectHeader";
 import ScrollToTopButton from "../containers/topbutton/Top";
 import Profile from "../containers/profile/Profile";
-import OtherProjects from "./OtherProjects";
 import "./ProjectPage.scss"
 import YoutubeEmbed from "./ProjectPageHelper";
 import Markdown from 'react-markdown'
-import {red} from "../assets/images/DeveloperFolio Developer Portfolio Template_files/0";
 export default function ProjectPage(project) {
   const [isDark, setIsDark] = useLocalStorage("isDark", "true");
 
