@@ -138,7 +138,7 @@ const projectPages = [
     routes: ["/fractal-engine", "/gl3", "/glIII"],
     image: require("./assets/projects/fractalengine/fractalEngine.webp"),
     organization: "University Würzburg",
-    timeFrame: "Sep. 2021 - Jul. 2023",
+    timeFrame: "Sep. 2021 - Jul. 2022",
     teamSize: 1,
     text: [
       {
