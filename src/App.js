@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Route, HashRouter} from "react-router-dom";
+import {Routes, Route, BrowserRouter as Router} from "react-router-dom";
 import "./App.scss";
 import Main from "./containers/Main";
 import ProjectPages from "./projectPages/ProjectPages";
@@ -7,14 +7,14 @@ import ProjectPages from "./projectPages/ProjectPages";
 function App() {
   return (
     <React.StrictMode>
-    <HashRouter >
+    <Router>
       <div>
         <Routes>
           <Route index element={<Main />} />
           {ProjectPages()}
         </Routes>
       </div>
-    </HashRouter >
+    </Router> >
     </React.StrictMode>
   );
 }

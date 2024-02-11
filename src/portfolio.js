@@ -63,9 +63,10 @@ const projectPages = [
         text:
           "RayVis uses its own data format for saving and loading. " +
           "Each file contains one or multiple ray data sets and scene geometry. " +
+          "The original ray data is provided by Advanced Micro Devices (AMD) in an internal format and is converted into the RayVis data format. " +
           "Direct3D Raytracing is used for rendering the scene geometry and the mesh components of the visualizations. " +
-          "For zhe volume visualization a separate compute-shader is used. " +
-          "RayVis can render the scene model in six different shading modes or exclude the scene geometry completely rom rendering (see Image on the left).",
+          "For the volume visualization a separate compute-shader is used. " +
+          "RayVis can render the scene model in six different shading modes or exclude the scene geometry completely rom rendering (see Image on the right).",
         image: require("./assets/projects/rayvis/renderer.webp"),
         right: false,
         ratio: 0.4
@@ -138,7 +139,7 @@ const projectPages = [
     routes: ["/fractal-engine", "/gl3", "/glIII"],
     image: require("./assets/projects/fractalengine/fractalEngine.webp"),
     organization: "University Würzburg",
-    timeFrame: "Sep. 2021 - Jul. 2022",
+    timeFrame: "Sep. 2021 - Jul. 2023",
     teamSize: 1,
     text: [
       {
@@ -188,12 +189,12 @@ https://fontawesome.com/icons?d=gallery */
   projects: [
     {
       description: "Ray Vis",
-      link: "./#/rayvis",
+      link: "./rayvis",
       skills: ["C++", "Visual Studio", "DirectX"]
     },
     {
       description: "GameLab III: Fractal Engine",
-      link: "./#/fractal-engine",
+      link: "./fractal-engine",
       skills: [
         "C++",
         "Visual Studio",
@@ -671,7 +672,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Project Page",
-          url: "./#/fractal-engine"
+          url: "./fractal-engine"
         },
         {
           name: "Watch Trailer",
@@ -767,7 +768,7 @@ const gameJams = {
       footerLink: [
         {
           name: "Project Page",
-          url: "./#/rayvis"
+          url: "./rayvis"
         },
         {
           name: "GitHub",
