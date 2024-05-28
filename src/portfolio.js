@@ -670,10 +670,10 @@ const bigProjects = {
       projectDesc:
         "Hardware-oriented, specialised Framework for the Nintendo Switch ™ console with a focus on compile-time-safe loading, use of hardware features and various graphics options. Minesweeper was implemented as proof of concept game.",
       footerLink: [
-        {
+        /*{
           name: "Project Page",
           url: "./fractal-engine"
-        },
+        },*/
         {
           name: "Watch Trailer",
           url: "https://www.youtube.com/watch?v=73KvNSI9d8c"
@@ -766,10 +766,10 @@ const gameJams = {
       projectName: "RayVis",
       projectDesc: "Raytracing Visualization Prototype.",
       footerLink: [
-        {
+        /*{
           name: "Project Page",
           url: "./rayvis"
-        },
+        },*/
         {
           name: "GitHub",
           url: "https://github.com/Darkblizzard21/rgb-website"
