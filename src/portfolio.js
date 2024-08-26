@@ -23,7 +23,7 @@ const greeting = {
   username: "Pirmin Pfeifer",
   title: "Hello There",
   subTitle: emoji(
-    "I'm Pirmin Pfeifer, an aspiring games engineer. Currently I am studying a computer science master in Würzburg, Germany. My passions are game technology, computer graphics and algorithms."
+    "I'm Pirmin Pfeifer, an aspiring graphics and games engineer. Currently I am studying a computer science master in Würzburg, Germany. My passions are computer graphics, game technology and algorithms."
   ),
   resumeLink: require("./assets/CV.pdf"), // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -180,6 +180,7 @@ const skillsSection = {
     "FOCUS ON GRAPHICS ENGINEERING AND GAME ENGINE SYSTEMS BUT ALSO A BIT OF ALL OTHER DISCIPLINES OF GAME DEVELOPMENT",
   skills: [
     emoji("⚡ Develop new Engine Features, Extensions and Development Tools"),
+    emoji("✨ D3D12 GPU Workgraphs"),
     emoji("⚡ Optimisation and Algorithm development"),
     emoji("✨ Scripting of Shaders and Post-Processing-Effects")
   ],
@@ -256,6 +257,10 @@ https://fontawesome.com/icons?d=gallery */
       skills: ["TypeScript", "WebStorm", "WebGL"]
     },
     {
+      description: "My own Computer Graphics Lecture",
+      skills: ["C++", "OpenGl"]
+    },
+    {
       description: "SquaredCode Formatter",
       link: "https://github.com/Darkblizzard21/SquaredCode",
       skills: ["JavaScript", "WebStorm"]
@@ -311,7 +316,7 @@ https://fontawesome.com/icons?d=gallery */
         }
       }
     },
-    {
+    /*{
       skillName: "TypeScript",
       iconData: {
         link: "https://www.typescriptlang.org/",
@@ -323,8 +328,7 @@ https://fontawesome.com/icons?d=gallery */
           proficiency: 3
         }
       }
-    },
-    {
+    },{
       skillName: "JavaScript",
       iconData: {
         link: "https://www.javascript.com/",
@@ -336,7 +340,7 @@ https://fontawesome.com/icons?d=gallery */
           proficiency: 3
         }
       }
-    },
+    },*/
     {
       skillName: "Unreal 4",
       iconData: {
@@ -405,7 +409,7 @@ https://fontawesome.com/icons?d=gallery */
         }
       }
     },
-    {
+    /*{
       skillName: "Switch SDK",
       iconData: {
         link: "https://developer.nintendo.com/",
@@ -418,8 +422,7 @@ https://fontawesome.com/icons?d=gallery */
           proficiency: 3
         }
       }
-    },
-    /*
+    },*/
     {
       skillName: "OpenGL",
       iconData: {
@@ -433,7 +436,7 @@ https://fontawesome.com/icons?d=gallery */
           proficiency: 4
         }
       }
-    },*/
+    },
     {
       skillName: "WebGL",
       iconData: {
@@ -448,7 +451,7 @@ https://fontawesome.com/icons?d=gallery */
         }
       }
     },
-    {
+    /*{
       skillName: "Discord API",
       iconData: {
         link: "https://discord.com/developers/docs/intro",
@@ -461,7 +464,7 @@ https://fontawesome.com/icons?d=gallery */
         }
       }
     }
-  ],
+  ],*/
   /*
   unusedSoftwareSkills:[ {
     skillName: "Java",
@@ -533,8 +536,8 @@ https://fontawesome.com/icons?d=gallery */
           proficiency: 3
         }
       }
-    },
-  ],*/
+    },*/
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -609,7 +612,16 @@ const workExperiences = {
       company: "Advanced Micro Devices, Inc.",
       companylogo: require("./assets/images/AMD_E_Wh_RGB.webp"),
       date: "April 2023 – Current",
-      desc: "Project currently under NDA.",
+      desc: "Working on GPU Workgraphs Demos and Samples.",
+      descBullets: [],
+      url: "https://www.amd.com/"
+    },
+    {
+      role: "Computer Graphics Lecturer",
+      company: "DHBW Angewandte Informatik Mosbach und Bad Mergentheim",
+      companylogo: require("./assets/images/DHBW-logo-square.webp"),
+      date: "April 2024 – Current",
+      desc: "Full Lecture prepared and held by me.",
       descBullets: [],
       url: "https://www.amd.com/"
     },
@@ -661,7 +673,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "University Projects",
+  title: "Major Projects",
   projects: [
     {
       video: require("./assets/videos/fractalWebSnippet.webm"),
@@ -799,7 +811,7 @@ const gameJams = {
       image: require("./assets/images/TDCratos.webp"),
       projectName: "TD Cratos",
       projectDesc:
-        "This game started as a self proposed 72H game challenge and introduced me to unity.",
+        "This game started as a self proposed 72H game challenge and introduced me to Unity.",
       footerLink: [
         {
           name: "Download on Itch.io",
