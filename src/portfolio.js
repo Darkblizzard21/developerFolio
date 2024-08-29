@@ -734,7 +734,7 @@ const bigProjects = {
       video: require("./assets/projects/rayvis/rayvis-preview.webm"),
       image: require("./assets/images/empty.webp"),
       projectName: "RayVis",
-      projectDesc: "Raytracing Visualization Prototype.",
+      projectDesc: "RayVis is a Raytracing Visualization Prototype for large amounts of rays. It was created as part of my Bachelors Thesis.",
       footerLink: [
         /*{
           name: "Project Page",
@@ -784,6 +784,24 @@ const gameJams = {
           name: "View Code on GitHub",
           url: "https://github.com/Darkblizzard21/WebGL-Boids"
         }
+      ]
+    },
+    {
+      video: require("./assets/videos/chickenwings.webm"),
+      image: require("./assets/images/chickencoin.webp"),
+      projectName: "Chicken Wings",
+      projectDesc:
+        "Game Jam Submission made in C++ and OpenGL.",
+      footerLink: [
+        {
+          name: "Download on Itch.io",
+          url: "https://qu0d0.itch.io/chicken-wings"
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/Darkblizzard21/MGJ-Chicken"
+        }
+        //  you can add extra buttons here.
       ]
     },
     {
