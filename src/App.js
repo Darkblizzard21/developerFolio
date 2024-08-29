@@ -14,7 +14,7 @@ function App() {
           {ProjectPages()}
         </Routes>
       </div>
-    </Router> >
+    </Router>
     </React.StrictMode>
   );
 }
