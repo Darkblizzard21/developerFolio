@@ -189,9 +189,14 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
   projects: [
     {
+      description: "Workgraph Demo @GDC2024",
+        link: "https://gpuopen.com/learn/gdc-2024-workgraphs-drawcalls/",
+      skills: ["C++", "Visual Studio", "Direct X 12"]
+    },
+    {
       description: "Ray Vis",
-      link: "./rayvis",
-      skills: ["C++", "Visual Studio", "DirectX"]
+      //link: "./rayvis",
+      skills: ["C++", "Visual Studio", "Direct X 12"]
     },
     {
       description: "GameLab III: Fractal Engine",
@@ -423,6 +428,20 @@ https://fontawesome.com/icons?d=gallery */
         }
       }
     },*/
+    {
+      skillName: "Direct X 12",
+      iconData: {
+        link: "https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-reference",
+        icon: require("./assets/images/d3d12_desat.webp"),
+        saturatedIcon: require("./assets/images/d3d12.webp"),
+        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/d3d12.webp"),
+        tooltip: {
+          name: "Direct X 12",
+          type: "GRAPHICS API",
+          proficiency: 4
+        }
+      }
+    },
     {
       skillName: "OpenGL",
       iconData: {
@@ -712,6 +731,22 @@ const bigProjects = {
       ]
     },
     {
+      video: require("./assets/projects/rayvis/rayvis-preview.webm"),
+      image: require("./assets/images/empty.webp"),
+      projectName: "RayVis",
+      projectDesc: "Raytracing Visualization Prototype.",
+      footerLink: [
+        /*{
+          name: "Project Page",
+          url: "./rayvis"
+        },*/
+        {
+          name: "GitHub",
+          url: "https://github.com/Darkblizzard21/rgb-website"
+        }
+      ]
+    },
+    {
       video: require("./assets/videos/EmptySpaces.webm"),
       image: require("./assets/images/emptySpaces.webp"),
       projectName: "Empty Spaces",
@@ -725,27 +760,6 @@ const bigProjects = {
         {
           name: "Download on Itch.io",
           url: "https://darkblizzard.itch.io/emptyspaces"
-        }
-      ]
-    },
-    {
-      video: require("./assets/videos/balancingHub.webm"),
-      image: require("./assets/images/balancingHub.webp"),
-      projectName: "Balancing Hub",
-      projectDesc:
-        'Balance your variables while playing with the "Balancing Hub" plugin for Unreal Engine 4.24.3. Created in collaboration with Quirin Maier.',
-      footerLink: [
-        {
-          name: "Watch Trailer",
-          url: "https://www.youtube.com/watch?v=7q_E0Ke6AJ4"
-        },
-        {
-          name: "Download on Itch.io",
-          url: "https://qu0d0.itch.io/balancing-hub"
-        },
-        {
-          name: "View Backend on GitHub",
-          url: "https://github.com/Darkblizzard21/BalancingHubBackend"
         }
       ]
     }
@@ -769,22 +783,6 @@ const gameJams = {
         {
           name: "View Code on GitHub",
           url: "https://github.com/Darkblizzard21/WebGL-Boids"
-        }
-      ]
-    },
-    {
-      video: require("./assets/projects/rayvis/rayvis-preview.webm"),
-      image: require("./assets/images/empty.webp"),
-      projectName: "RayVis",
-      projectDesc: "Raytracing Visualization Prototype.",
-      footerLink: [
-        /*{
-          name: "Project Page",
-          url: "./rayvis"
-        },*/
-        {
-          name: "GitHub",
-          url: "https://github.com/Darkblizzard21/rgb-website"
         }
       ]
     },
@@ -832,6 +830,28 @@ const gameJams = {
         {
           name: "GitHub",
           url: "https://github.com/Darkblizzard21/rgb-website"
+        }
+      ]
+    },
+    {
+      video: require("./assets/videos/balancingHub.webm"),
+      image: require("./assets/images/balancingHub.webp"),
+      projectName: "Balancing Hub",
+      projectDesc:
+        'Blanacing plugin for UE4',
+        //'Balance your variables while playing with the "Balancing Hub" plugin for Unreal Engine 4.24.3. Created in collaboration with Quirin Maier.',
+      footerLink: [
+        /*{
+          name: "Watch Trailer",
+          url: "https://www.youtube.com/watch?v=7q_E0Ke6AJ4"
+        },*/
+        {
+          name: "Download on Itch.io",
+          url: "https://qu0d0.itch.io/balancing-hub"
+        },
+        {
+          name: "View Backend on GitHub",
+          url: "https://github.com/Darkblizzard21/BalancingHubBackend"
         }
       ]
     }
