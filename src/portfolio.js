@@ -191,19 +191,18 @@ https://fontawesome.com/icons?d=gallery */
     {
       description: "Workgraph Demo @GDC2024",
         link: "https://gpuopen.com/learn/gdc-2024-workgraphs-drawcalls/",
-      skills: ["C++", "Visual Studio", "Direct X 12"]
+      skills: ["C++", "Direct X 12"]
     },
     {
       description: "Ray Vis",
       //link: "./rayvis",
-      skills: ["C++", "Visual Studio", "Direct X 12"]
+      skills: ["C++", "Direct X 12"]
     },
     {
       description: "GameLab III: Fractal Engine",
       link: "./fractal-engine",
       skills: [
         "C++",
-        "Visual Studio",
         "ReSharper",
         "Nintendo Switch SDK",
         "OpenGl"
@@ -212,12 +211,12 @@ https://fontawesome.com/icons?d=gallery */
     {
       description: "GameLab II: Balancing Hub",
       link: "https://www.youtube.com/watch?v=7q_E0Ke6AJ4",
-      skills: ["C++", "Unreal Engine 4", "Visual Studio", "Rider"]
+      skills: ["C++", "Unreal Engine 4", "Rider"]
     },
     {
       description: "GameLab I: Empty Spaces",
       link: "https://darkblizzard.itch.io/emptyspaces",
-      skills: ["C++", "Unreal Engine 4", "Visual Studio"]
+      skills: ["C++", "Unreal Engine 4",]
     },
     {
       description: "BrightnessBased TextureLayering",
@@ -230,6 +229,11 @@ https://fontawesome.com/icons?d=gallery */
       skills: ["C#", "Unity", "Rider"]
     },
     {
+      description: "Chicken Wings",
+      link: "https://qu0d0.itch.io/chicken-wings",
+      skills: ["C++", "OpenGl"]
+    },
+    {
       description: "Dada Longlegs",
       link: "https://qu0d0.itch.io/dada-longlegs",
       skills: ["C#", "Unity", "Rider"]
@@ -237,7 +241,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       description: "TD Cratos",
       link: "https://darkblizzard.itch.io/td-project",
-      skills: ["C#", "Unity", "Visual Studio"]
+      skills: ["C#", "Unity"]
     },
     {
       description: "PacMan AI @ Interactive AI Lecture",
@@ -291,6 +295,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       description: "Almost all of my projects",
       skills: ["Git"]
+    },
+    {
+      description: "Most C++ and Unity projects",
+      skills: ["Visual Studio"]
     }
   ],
 
