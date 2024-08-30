@@ -1,94 +1,178 @@
-import React, {useState, createRef} from "react";
+import React, {createRef, useContext} from "react";
+import {Fade, Slide} from "react-reveal";
 import "./ExperienceCard.scss";
-import ColorThief from "colorthief";
+import StyleContext from "../../contexts/StyleContext";
+import {presentNum} from "../../portfolio";
 
-export default function ExperienceCard({cardInfo, isDark}) {
-  const [colorArrays, setColorArrays] = useState([]);
-  const imgRef = createRef();
+function GetDescBullets({descBullets}) {
+  const {isDark} = useContext(StyleContext);
+  return descBullets
+    ? descBullets.map((item, i) => (
+      <li key={i} className={`${isDark ? "dark-mode" : ""} subtitle`}>
+        {item}
+      </li>
+    ))
+    : null;
+}
 
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+function DateCodeToStr(code) {
+  if(code === presentNum) return "Present"
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ]
+  let year = Math.trunc(code/100)
+  return months[(code%100)-1] + " " + year
+}
+
+function timeDiff(start, end){
+
+  if(end < start)
+    console.error(`Experience started after its end! start: ${start} end: ${end}`);
+
+  if(end === presentNum){
+    let date = new Date();
+    end = date.getFullYear() * 100 + date.getMonth() + 1;
   }
+  let startY = Math.trunc(start / 100)
+  let endY = Math.trunc(end / 100)
+  let yDiff = endY-startY;
 
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
+  let startMonth = start % 100
+  let endMonth = end % 100
+  if(endMonth < startMonth){
+    endMonth += 12
+    yDiff -= 1
   }
-
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    const win = window.open(url, "_blank");
-    win.focus();
+  let mDiff = endMonth - startMonth + 1
+  if(mDiff === 12){
+    yDiff += 1
+    mDiff = 0
   }
+  let yText = `${yDiff} yr${yDiff===1 ? 's' : ''} `
+  let mText = `${mDiff} ${yDiff===1 ? 'mon' : 'mos'}`
+  return ` • ${yDiff>0 ? yText : ''}${mDiff>0 ? mText : ''}`;
 
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
-  };
+}
 
+
+function singleSection(section, isDark, showTime) {
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
-        <div className="experience-blurred_div"></div>
-        <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
-        </div>
-        <a href={cardInfo.url}>
-          <img
-            crossOrigin={"anonymous"}
-            ref={imgRef}
-            className="experience-roundedimg"
-            src={cardInfo.companylogo}
-            alt={cardInfo.company}
-            onLoad={() => getColorArrays()}
-            onClick={() => openUrlInNewTab(cardInfo.url)}
-          />
-        </a>
-      </div>
-      <div className="experience-text-details">
-        <h5
-          className={
-            isDark
-              ? "experience-text-role dark-mode-text"
-              : "experience-text-role"
-          }
-        >
-          {cardInfo.role}
-        </h5>
-        <h5
-          className={
-            isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
-          }
-        >
-          {cardInfo.date}
-        </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
-        >
-          {cardInfo.desc}
-        </p>
+    <div className="experience-single-wrapper">
+    <div className="experience-text-details">
+      <h5
+        className={
+          isDark
+            ? "dark-mode experience-text-subHeader"
+            : "experience-text-subHeader"
+        }
+      >
+        {section.subHeader}
+      </h5>
+      <p
+        className={`${
+          isDark ? "dark-mode" : ""
+        } experience-text-duration`}
+      >
+        {DateCodeToStr(section.start) + " - " + DateCodeToStr(section.end)}
+        {showTime ? timeDiff(section.start, section.end) : ""}
+      </p>
+      <p className="experience-text-desc">{section.desc}</p>
+      <div className="experience-text-bullets">
         <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
+          <GetDescBullets descBullets={section.descBullets} />
         </ul>
       </div>
+    </div>
+    </div>);
+}
+
+function multipleSections(sections, isDark, showTime) {
+  return (
+    <ul className="experience-bar">
+    {sections.map(section =>
+      <li><div className="experience-text-details">
+        <h5
+          className={
+            isDark
+              ? "dark-mode experience-text-subHeader"
+              : "experience-text-subHeader"
+          }
+        >
+          {section.subHeader}
+        </h5>
+        <p
+          className={`${
+            isDark ? "dark-mode" : ""
+          } experience-text-duration`}
+        >
+          {DateCodeToStr(section.start) + " - " + DateCodeToStr(section.end)}
+          {showTime ? timeDiff(section.start, section.end) : ""}
+        </p>
+        <p className="experience-text-desc">{section.desc}</p>
+        <div className="experience-text-bullets">
+          <ul>
+            <GetDescBullets descBullets={section.descBullets} />
+          </ul>
+        </div>
+      </div></li>)}
+    </ul>)
+}
+
+export default function ExperienceCard({place, showTime}) {
+  const imgRef = createRef();
+  const {isDark} = useContext(StyleContext);
+
+  const showOverallTime = showTime && place.items.length > 1
+
+  let startTime = place.items.map(section=>section.start).reduce((a, c) => Math.min(a,c), presentNum)
+  let endTime = place.items.map(section=>section.end).reduce((a, c) => Math.max(a,c), 0)
+
+  if (!place.logo)
+    console.error(`Image of ${place.name} is missing in experience section`);
+  return (
+    <div>
+      <Fade left duration={1000}>
+        <div className="experience-card">
+          {place.logo && (
+            <div className="experience-card-left">
+              <img
+                crossOrigin={"anonymous"}
+                ref={imgRef}
+                className="experience-roundedimg"
+                src={place.logo}
+                alt={place.name}
+              />
+            </div>
+          )}
+          <div className="experience-card-right">
+            <h5 className="experience-text-place">{place.name}</h5>
+            {place.location && (<p
+              className={`${
+                isDark ? "dark-mode" : ""
+              } experience-text-duration`}
+            >
+              {place.location}{showOverallTime ? timeDiff(startTime, endTime) : "" }
+            </p>)}
+            {(place.items.length === 1) ?
+              singleSection(place.items[0], isDark, showTime)
+              : multipleSections(place.items, isDark, showTime)}
+          </div>
+        </div>
+      </Fade>
+      <Slide left duration={2000}>
+        <div className="experience-card-border"></div>
+      </Slide>
     </div>
   );
 }

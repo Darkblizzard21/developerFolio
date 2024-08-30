@@ -575,14 +575,14 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Julius-Maximilians University",
+      name: "Julius-Maximilians University",
       logo: require("./assets/images/uniwue.webp"),
+      location: "Würzburg, Bavaria, Germany",
       items: [
         {
           subHeader: "Computer Science Master",
           start: 202310,
           end: presentNum,
-          duration: "October 2023 - Current",
           desc: "CS master with a personal focus on:",
           descBullets: [
             "Algorithm design",
@@ -594,7 +594,6 @@ const educationInfo = {
           subHeader: "Games Engineering Bachelor",
           start: 201909,
           end: 202309,
-          duration: "September 2019 - September 2023",
           desc: "Received highest grade for all Games Engineering projects:",
           descBullets: [
             "GameLab I: EmptySpaces",
@@ -607,17 +606,15 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Friedrich-List-Gymnasium Gemünden",
+      name: "Friedrich-List-Gymnasium Gemünden",
       logo: require("./assets/images/flg.webp"),
       items: [
         {
           subHeader: "Abitur",
           start: 201109,
           end: 201907,
-          duration: "September 2011 - July 2019"
         }
       ]
-
     }
   ]
 };
@@ -649,56 +646,77 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineering Working Student",
-      company: "Advanced Micro Devices, Inc.",
-      companylogo: require("./assets/images/AMD_E_Wh_RGB.webp"),
-      date: "April 2023 – Current",
-      desc: "Working on GPU Workgraphs Demos and Samples.",
-      descBullets: [],
-      url: "https://www.amd.com/"
+      name: "Advanced Micro Devices, Inc.",
+      logo: require("./assets/images/AMD_E_Wh_RGB.webp"),
+      location: "Munich, Bavaria, Germany",
+      url: "https://www.amd.com/",
+      items: [
+        {
+          subHeader: "Software Engineering Working Student",
+          start: 202304,
+          end: presentNum,
+          desc: "Working on GPU Workgraphs Demos and Samples.",
+          descBullets: [],
+        },
+        {
+          subHeader: "Software Engineering Intern",
+          start: 202210,
+          end: 202303,
+          desc: "Developed and maintained research software for raytracing. I also worked on a web platform and some shell automations",
+          descBullets: [],
+        }
+      ]
     },
     {
-      role: "Computer Graphics Lecturer",
-      company: "DHBW Angewandte Informatik Mosbach und Bad Mergentheim",
-      companylogo: require("./assets/images/DHBW-logo-square.webp"),
-      date: "April 2024 – Current",
-      desc: "Full Lecture prepared and held by me.",
-      descBullets: [],
-      url: "https://www.amd.com/"
+      name: "Duale Hochschule Baden-Württemberg",
+      logo: require("./assets/images/DHBW-logo-square.webp"),
+      location: "Bad Mergentheim, Baden-Württemberg, Germany",
+      items: [
+        {
+          subHeader: "Computer Graphics Lecturer",
+          start: 202404,
+          end: presentNum,
+          desc: "Full Lecture prepared and held by me.",
+          descBullets: [],
+        }
+      ]
     },
     {
-      role: "Software Engineering Intern",
-      company: "Advanced Micro Devices, Inc.",
-      companylogo: require("./assets/images/AMD_E_Wh_RGB.webp"),
-      date: "October 2022 – March 2023",
-      desc: "Developed and maintained research software for raytracing. I also worked on a web platform and some shell automations",
-      descBullets: [],
-      url: "https://www.amd.com/"
+      name: "Building Information Innovator GmbH",
+      logo: require("./assets/images/bii2.webp"),
+      url: "https://www.bii-gmbh.com/",
+      location: "Würzburg, Bavaria, Germany",
+      items: [
+        {
+          subHeader: "Software Engineer",
+          start: 202103,
+          end: 202109,
+          desc: "Developed professional digital tool for modeling, simulation and visualization of construction processes with Unity and a functional C# library.",
+          descBullets: [
+            "Build graph data structures for the management of cargo flows",
+            "Build development & debug tools"
+          ],
+        }
+      ]
     },
     {
-      role: "Software Engineer",
-      company: "Building Information Innovator GmbH",
-      companylogo: require("./assets/images/bii2.webp"),
-      date: "March 2021 – September 2021",
-      desc: "Developed professional digital tool for modeling, simulation and visualization of construction processes with Unity and a functional C# library.",
-      descBullets: [
-        "Build graph data structures for the management of cargo flows",
-        "Build development & debug tools"
-      ],
-      url: "https://www.bii-gmbh.com/"
-    },
-    {
-      role: "Tutor for Game Lab I",
-      company: "Julius-Maximilians University",
-      companylogo: require("./assets/images/uniwue.webp"),
-      date: "October 2020 – September 2022",
-      desc: "Supported students at overcoming problems they faced during game development process.",
-      descBullets: [
-        "Explained basic and intermediate topics the students brought up",
-        "Created introductory tutorials for Unreal Engine 4 & Unity",
-        "Tested and reviewed the students games"
-      ],
-      url: "https://hci.uni-wuerzburg.de/"
+      name: "Julius-Maximilians University",
+      logo: require("./assets/images/uniwue.webp"),
+      url: "https://hci.uni-wuerzburg.de/",
+      location: "Würzburg, Bavaria, Germany",
+      items: [
+        {
+          subHeader: "Tutor for Game Lab I",
+          start: 202010,
+          end: 202209,
+          desc: "Supported students at overcoming problems they faced during game development process.",
+          descBullets: [
+            "Explained basic and intermediate topics the students brought up",
+            "Created introductory tutorials for Unreal Engine 4 & Unity",
+            "Tested and reviewed the students games"
+          ],
+        }
+      ]
     }
   ]
 };
