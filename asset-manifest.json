@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.48f52310.css",
-    "main.js": "/static/js/main.262d764d.js",
+    "main.js": "/static/js/main.0762b42f.js",
     "static/css/64.2cf67710.chunk.css": "/static/css/64.2cf67710.chunk.css",
     "static/js/64.8378b87e.chunk.js": "/static/js/64.8378b87e.chunk.js",
     "static/css/769.a18cb2b5.chunk.css": "/static/css/769.a18cb2b5.chunk.css",
@@ -31,8 +31,9 @@
     "static/media/uniwue.webp": "/static/media/uniwue.985c9ca954923d956c23.webp",
     "static/media/longLegs.webp": "/static/media/longLegs.b7aef92e9aab94517eeb.webp",
     "static/media/boidLogo.webp": "/static/media/boidLogo.90bbcce552503e5b4e9f.webp",
-    "static/media/d3d12.webp": "/static/media/d3d12.0d4915efd228afc938af.webp",
+    "static/media/d3d12.webp": "/static/media/d3d12.dfbf5941fc56d062c46c.webp",
     "static/media/DHBW-logo-square.webp": "/static/media/DHBW-logo-square.1c68303c2c58dc8e959f.webp",
+    "static/media/d3d12-2.webp": "/static/media/d3d12-2.3f87d1df48d5a0d52e1f.webp",
     "static/media/d3d12_desat.webp": "/static/media/d3d12_desat.e5c2fb62ab607db12da9.webp",
     "static/media/unityComposit.webp": "/static/media/unityComposit.a74a004a1c6f0379e8c6.webp",
     "static/media/csharp.webp": "/static/media/csharp.0eb34f9136ba677baceb.webp",
@@ -67,7 +68,7 @@
     "static/media/empty.webp": "/static/media/empty.8d45623b39a65aceca9d.webp",
     "static/media/talksCardBack.webp": "/static/media/talksCardBack.dec11d7d4269f8e56f9b.webp",
     "main.48f52310.css.map": "/static/css/main.48f52310.css.map",
-    "main.262d764d.js.map": "/static/js/main.262d764d.js.map",
+    "main.0762b42f.js.map": "/static/js/main.0762b42f.js.map",
     "64.2cf67710.chunk.css.map": "/static/css/64.2cf67710.chunk.css.map",
     "64.8378b87e.chunk.js.map": "/static/js/64.8378b87e.chunk.js.map",
     "769.a18cb2b5.chunk.css.map": "/static/css/769.a18cb2b5.chunk.css.map",
@@ -75,6 +76,6 @@
   },
   "entrypoints": [
     "static/css/main.48f52310.css",
-    "static/js/main.262d764d.js"
+    "static/js/main.0762b42f.js"
   ]
 }
