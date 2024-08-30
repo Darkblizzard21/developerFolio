@@ -599,7 +599,7 @@ const educationInfo = {
             "GameLab I: EmptySpaces",
             "GameLab II: Balancing Hub",
             "GameLab III: Fractal Engine & Minesweeper",
-            "Movie Making with Game Engines: BrightnessBasedTextureLayering",
+            "Movie Making with Game Engines",
             "Seminar Current Trends in Games Engineering: Automated Animation of Creatures"
           ]
         }
