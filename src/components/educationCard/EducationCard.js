@@ -2,19 +2,100 @@ import React, {createRef, useContext} from "react";
 import {Fade, Slide} from "react-reveal";
 import "./EducationCard.scss";
 import StyleContext from "../../contexts/StyleContext";
+import {educationInfo} from "../../portfolio";
+
+function GetDescBullets({descBullets}) {
+  const {isDark} = useContext(StyleContext);
+  return descBullets
+    ? descBullets.map((item, i) => (
+      <li key={i} className={`${isDark ? "dark-mode" : ""} subtitle`}>
+        {item}
+      </li>
+    ))
+    : null;
+}
+
+function DateCodeToStr(code) {
+  if(code === 0) return "Present"
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ]
+  let year = Math.trunc(code/100)
+  return months[code%100] + " " + year
+}
+
+function singleSection(section, isDark) {
+  return (
+    <div className="education-text-details">
+      <h5
+        className={
+          isDark
+            ? "dark-mode education-text-subHeader"
+            : "education-text-subHeader"
+        }
+      >
+        {section.subHeader}
+      </h5>
+      <p
+        className={`${
+          isDark ? "dark-mode" : ""
+        } education-text-duration`}
+      >
+        {DateCodeToStr(section.start) + " - " + DateCodeToStr(section.end)}
+      </p>
+      <p className="education-text-desc">{section.desc}</p>
+      <div className="education-text-bullets">
+        <ul>
+          <GetDescBullets descBullets={section.descBullets} />
+        </ul>
+      </div>
+    </div>);
+}
+
+function multipleSections(sections, isDark) {
+  return (
+    <ul className="education-bar">
+    {sections.map(section =>
+      <li><div className="education-text-details">
+        <h5
+          className={
+            isDark
+              ? "dark-mode education-text-subHeader"
+              : "education-text-subHeader"
+          }
+        >
+          {section.subHeader}
+        </h5>
+        <p
+          className={`${
+            isDark ? "dark-mode" : ""
+          } education-text-duration`}
+        >
+          {DateCodeToStr(section.start) + " - " + DateCodeToStr(section.end)}
+        </p>
+        <p className="education-text-desc">{section.desc}</p>
+        <div className="education-text-bullets">
+          <ul>
+            <GetDescBullets descBullets={section.descBullets} />
+          </ul>
+        </div>
+      </div></li>)}
+    </ul>)
+}
 
 export default function EducationCard({school}) {
   const imgRef = createRef();
-
-  const GetDescBullets = ({descBullets}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li key={i} className={`${isDark ? "dark-mode" : ""} subtitle`}>
-            {item}
-          </li>
-        ))
-      : null;
-  };
   const {isDark} = useContext(StyleContext);
 
   if (!school.logo)
@@ -36,31 +117,7 @@ export default function EducationCard({school}) {
           )}
           <div className="education-card-right">
             <h5 className="education-text-school">{school.schoolName}</h5>
-
-            <div className="education-text-details">
-              <h5
-                className={
-                  isDark
-                    ? "dark-mode education-text-subHeader"
-                    : "education-text-subHeader"
-                }
-              >
-                {school.subHeader}
-              </h5>
-              <p
-                className={`${
-                  isDark ? "dark-mode" : ""
-                } education-text-duration`}
-              >
-                {school.duration}
-              </p>
-              <p className="education-text-desc">{school.desc}</p>
-              <div className="education-text-bullets">
-                <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
-                </ul>
-              </div>
-            </div>
+            {(school.items.length === 1) ? singleSection(school.items[0], isDark) : multipleSections(school.items, isDark)}
           </div>
         </div>
       </Fade>

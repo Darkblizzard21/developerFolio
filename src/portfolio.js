@@ -576,34 +576,47 @@ const educationInfo = {
     {
       schoolName: "Julius-Maximilians University",
       logo: require("./assets/images/uniwue.webp"),
-      subHeader: "Computer Science MSc",
-      duration: "October 2023 - Current",
-      desc: "CS master with a personal focus on:",
-      descBullets: [
-        "Algorithm design",
-        "Computer graphics",
-        "Game engine technologies"
-      ]
-    },
-    {
-      schoolName: "Julius-Maximilians University",
-      logo: require("./assets/images/uniwue.webp"),
-      subHeader: "Games Engineering BSc",
-      duration: "September 2019 - September 2023",
-      desc: "Received highest grade for all Games Engineering projects:",
-      descBullets: [
-        "GameLab I: EmptySpaces",
-        "GameLab II: Balancing Hub",
-        "GameLab III: Fractal Engine & Minesweeper",
-        "Movie Making with Game Engines: BrightnessBasedTextureLayering",
-        "Seminar Current Trends in Games Engineering: Automated Animation of Creatures"
+      items: [
+        {
+          subHeader: "Computer Science Master",
+          start: 202310,
+          end: 0,
+          duration: "October 2023 - Current",
+          desc: "CS master with a personal focus on:",
+          descBullets: [
+            "Algorithm design",
+            "Computer graphics",
+            "Game engine technologies"
+          ]
+        },
+        {
+          subHeader: "Games Engineering Bachelor",
+          start: 201909,
+          end: 202309,
+          duration: "September 2019 - September 2023",
+          desc: "Received highest grade for all Games Engineering projects:",
+          descBullets: [
+            "GameLab I: EmptySpaces",
+            "GameLab II: Balancing Hub",
+            "GameLab III: Fractal Engine & Minesweeper",
+            "Movie Making with Game Engines: BrightnessBasedTextureLayering",
+            "Seminar Current Trends in Games Engineering: Automated Animation of Creatures"
+          ]
+        }
       ]
     },
     {
       schoolName: "Friedrich-List-Gymnasium Gemünden",
       logo: require("./assets/images/flg.webp"),
-      subHeader: "Abitur",
-      duration: "September 2011 - July 2019"
+      items: [
+        {
+          subHeader: "Abitur",
+          start: 201109,
+          end: 201907,
+          duration: "September 2011 - July 2019"
+        }
+      ]
+
     }
   ]
 };
