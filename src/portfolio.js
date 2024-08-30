@@ -570,6 +570,7 @@ https://fontawesome.com/icons?d=gallery */
 
 // Education Section
 
+const presentNum = 1999907;
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
@@ -580,7 +581,7 @@ const educationInfo = {
         {
           subHeader: "Computer Science Master",
           start: 202310,
-          end: 0,
+          end: presentNum,
           duration: "October 2023 - Current",
           desc: "CS master with a personal focus on:",
           descBullets: [
@@ -1027,5 +1028,6 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
-  isHireable
+  isHireable,
+  presentNum
 };

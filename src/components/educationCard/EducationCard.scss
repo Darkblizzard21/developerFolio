@@ -88,7 +88,7 @@
   padding-left: 0.25rem;
 }
 .education-bar >li {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   position: relative;
   display:flex
 }
@@ -102,16 +102,14 @@
 .education-bar>li:after {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2rem;
   content: '';
   border-left: 0.3rem solid white;
   margin-left: 0.2875rem;
   height: 80%;
   opacity: 0.25;
 }
-.education-bar >li:first-of-type:after {
-  top: 2rem;
-}
+
 .education-bar >li:last-of-type:after {
   height: 0px;
 }

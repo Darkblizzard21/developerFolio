@@ -2,7 +2,7 @@ import React, {createRef, useContext} from "react";
 import {Fade, Slide} from "react-reveal";
 import "./EducationCard.scss";
 import StyleContext from "../../contexts/StyleContext";
-import {educationInfo} from "../../portfolio";
+import {presentNum} from "../../portfolio";
 
 function GetDescBullets({descBullets}) {
   const {isDark} = useContext(StyleContext);
@@ -16,7 +16,7 @@ function GetDescBullets({descBullets}) {
 }
 
 function DateCodeToStr(code) {
-  if(code === 0) return "Present"
+  if(code === presentNum) return "Present"
   let months = [
     "Jan",
     "Feb",
