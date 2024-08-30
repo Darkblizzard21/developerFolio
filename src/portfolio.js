@@ -655,15 +655,15 @@ const workExperiences = {
           subHeader: "Software Engineering Working Student",
           start: 202304,
           end: presentNum,
-          desc: "Working on GPU Workgraphs Demos and Samples.",
-          descBullets: [],
+          desc: "Research Work on GPU Workgraphs and Geometry Processing.",
+          descBullets: ["Worked on the GPU Workgraphs Demo presented at GDC 2024"],
         },
         {
           subHeader: "Software Engineering Intern",
           start: 202210,
           end: 202303,
-          desc: "Developed and maintained research software for raytracing. I also worked on a web platform and some shell automations",
-          descBullets: [],
+          desc: "Internship for my Games Engineering Bachelor",
+          descBullets: ["Developed and maintained research software for raytracing", "Worked on a a web platform and shell automations"],
         }
       ]
     },
@@ -676,7 +676,7 @@ const workExperiences = {
           subHeader: "Computer Graphics Lecturer",
           start: 202404,
           end: presentNum,
-          desc: "Full Lecture prepared and held by me.",
+          desc: "Created and held a Computer Graphics Lecture containing nine units. It was accompanied by an exercise in OpenGl. Currently i am supervising a Bachelors Thesis at the University.",
           descBullets: [],
         }
       ]
@@ -841,6 +841,20 @@ const gameJams = {
           name: "GitHub",
           url: "https://github.com/Darkblizzard21/MGJ-Chicken"
         }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      video: require("./assets/videos/gdc24-sml.webm"),
+      image: require("./assets/images/ivy.webp"),
+      projectName: "GDC24 Demo",
+      projectDesc:
+        "GPU Workgraphs Demo from AMD.",
+      footerLink: [
+        {
+          name: "Blog Post",
+          url: "https://gpuopen.com/learn/gdc-2024-workgraphs-drawcalls/"
+        },
         //  you can add extra buttons here.
       ]
     },
