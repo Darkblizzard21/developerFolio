@@ -152,7 +152,7 @@ const projectPages = [
         text:
           "Blender and GIMP were used to model and animate the promotional material and the sprites used in the minesweeper implementation. " +
           "Visual studio was used in combination with Resharper for coding and building. " +
-          "The engine Provides rendering abstractions, a scene graph, asset loading and other abstractions for SDK functions.",
+          "The engine provides rendering abstractions, a scene graph, asset loading and other abstractions for SDK functions.",
         image: require("./assets/projects/fractalengine/fractalEngine-tools.webp"),
         right: false,
         ratio: 0.6
@@ -442,7 +442,7 @@ https://fontawesome.com/icons?d=gallery */
         link: "https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-reference",
         icon: require("./assets/images/d3d12_desat.webp"),
         saturatedIcon: require("./assets/images/d3d12.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/d3d12.webp"),
+        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/d3d12-2.webp"),
         tooltip: {
           name: "Direct X 12",
           type: "GRAPHICS API",
