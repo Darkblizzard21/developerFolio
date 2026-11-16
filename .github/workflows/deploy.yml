@@ -18,18 +18,10 @@ jobs:
         with:
           persist-credentials: false
           submodules: true
-      - name: Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v3.8.1
         with:
           node-version: 18.x
-
-      - name: Update npm 🚀
-        run: npm install -g npm@latest
 
       - name: Install and Build 🔧 # Build the Project
         run: |
