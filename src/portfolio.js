@@ -23,9 +23,9 @@ const greeting = {
   username: "Pirmin Pfeifer",
   title: "Hello There",
   subTitle: emoji(
-    "I'm Pirmin Pfeifer, an aspiring graphics and games engineer. Currently I am studying a computer science master in Würzburg, Germany. My passions are computer graphics, game technology and algorithms."
+    "I'm Pirmin Pfeifer, a graphics and sdk engineer for FSR at AMD. My passions are computer graphics, game technology and algorithms."
   ),
-  resumeLink: require("./assets/CV.pdf"), // Set to empty to hide the button
+  resumeLink: "",//require("./assets/CV.pdf"), // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -177,17 +177,23 @@ const projectPages = [
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "FOCUS ON GRAPHICS ENGINEERING AND GAME ENGINE SYSTEMS BUT ALSO A BIT OF ALL OTHER DISCIPLINES OF GAME DEVELOPMENT",
+    "FOCUS ON GRAPHICS ENGINEERING BUT ALSO A BIT OF ALL OTHER DISCIPLINES OF GAME DEVELOPMENT",
   skills: [
-    emoji("⚡ Develop new Engine Features, Extensions and Development Tools"),
-    emoji("✨ D3D12 GPU Workgraphs"),
-    emoji("⚡ Optimisation and Algorithm development"),
-    emoji("✨ Scripting of Shaders and Post-Processing-Effects")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
   projects: [
+     {
+      description: "FSR Upscaling",
+        link: "https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK",
+      skills: ["C++", "Direct X 12", "FSR"]
+    },
+     {
+      description: "FSR Framegeneration",
+        link: "https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK",
+      skills: ["C++", "Direct X 12", "FSR"]
+    },
     {
       description: "Workgraph Demo @GDC2024",
         link: "https://gpuopen.com/learn/gdc-2024-workgraphs-drawcalls/",
@@ -209,88 +215,17 @@ https://fontawesome.com/icons?d=gallery */
       ]
     },
     {
-      description: "GameLab II: Balancing Hub",
-      link: "https://www.youtube.com/watch?v=7q_E0Ke6AJ4",
-      skills: ["C++", "Unreal Engine 4", "Rider"]
-    },
-    {
-      description: "GameLab I: Empty Spaces",
-      link: "https://darkblizzard.itch.io/emptyspaces",
-      skills: ["C++", "Unreal Engine 4",]
-    },
-    {
-      description: "BrightnessBased TextureLayering",
-      link: "https://darkblizzard.itch.io/texturelayering",
-      skills: ["Unreal Engine 4"]
-    },
-    {
-      description: "dProB @ BII Gmbh",
-      link: "https://www.bii-gmbh.com/",
-      skills: ["C#", "Unity", "Rider"]
-    },
-    {
-      description: "Chicken Wings",
-      link: "https://qu0d0.itch.io/chicken-wings",
-      skills: ["C++", "OpenGl"]
-    },
-    {
-      description: "Dada Longlegs",
-      link: "https://qu0d0.itch.io/dada-longlegs",
-      skills: ["C#", "Unity", "Rider"]
-    },
-    {
-      description: "TD Cratos",
-      link: "https://darkblizzard.itch.io/td-project",
-      skills: ["C#", "Unity"]
-    },
-    {
-      description: "PacMan AI @ Interactive AI Lecture",
-      skills: ["C#", "Unity", "Rider"]
-    },
-    {
-      description: "Advent of Code 2021",
-      link: "https://github.com/Darkblizzard21/AoC2021",
-      skills: ["Java", "IntelliJ IDEA"]
-    },
-    {
-      description: "Enigma Example Project",
-      link: "https://github.com/ShaikaJar/Enigma",
-      skills: ["Java", "IntelliJ IDEA"]
+      description: "Game Jams & Game Projects",
+      link: "https://darkblizzard.itch.io/",
+      skills: ["C++", "OpenGl", "Godot", "Blender", "C#", "Unity",  "Unreal Engine 4"]
     },
     {
       description: "Boid Simulation on this Website",
       skills: ["JavaScript", "WebStorm", "WebGL"]
     },
     {
-      description: "WebGL ProtoType @ Interactive Computer Graphics Lecture",
-      skills: ["TypeScript", "WebStorm", "WebGL"]
-    },
-    {
       description: "My own Computer Graphics Lecture",
       skills: ["C++", "OpenGl"]
-    },
-    {
-      description: "SquaredCode Formatter",
-      link: "https://github.com/Darkblizzard21/SquaredCode",
-      skills: ["JavaScript", "WebStorm"]
-    },
-    {
-      description: "DynamicChannels Discord Bot Module",
-      link: "https://github.com/Darkblizzard21/DynamicChannelsModule",
-      skills: ["C#", "Rider", "Discord API"]
-    },
-    {
-      description: "Discord Management Bot",
-      skills: ["JavaScript", "WebStorm", "Discord API"]
-    },
-    {
-      description: "BlenderRenderCollection",
-      link: "https://github.com/Darkblizzard21/BlenderRenderCollection",
-      skills: ["Blender"]
-    },
-    {
-      description: "3D Models and Promotional Art for my Projects",
-      skills: ["Blender"]
     },
     {
       description: "Almost all of my projects",
@@ -304,6 +239,34 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
+      skillName: "FSR",
+      iconData: {
+        link: "https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK",
+        icon: require("./assets/images/amd.webp"),
+        saturatedIcon: require("./assets/images/amd_w.webp"),
+        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/amd.webp"),
+        tooltip: {
+          name: "FSR",
+          type: "GRAPHICS SDK",
+          proficiency: 4
+        }
+      }
+    },
+    {
+      skillName: "Direct X 12",
+      iconData: {
+        link: "https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-reference",
+        icon: require("./assets/images/d3d12_desat.webp"),
+        saturatedIcon: require("./assets/images/d3d12.webp"),
+        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/d3d12-2.webp"),
+        tooltip: {
+          name: "Direct X 12",
+          type: "GRAPHICS API",
+          proficiency: 4
+        }
+      }
+    },
+    {
       skillName: "C++",
       iconData: {
         link: "https://isocpp.org/",
@@ -313,85 +276,6 @@ https://fontawesome.com/icons?d=gallery */
           name: "C++",
           type: "PROGRAMMING LANGUAGE",
           proficiency: 4
-        }
-      }
-    },
-    {
-      skillName: "C#",
-      iconData: {
-        link: "https://docs.microsoft.com/en-us/dotnet/csharp/",
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/csharp.webp"),
-        icon: require("./assets/images/csharp.webp"),
-        tooltip: {
-          name: "C#",
-          type: "PROGRAMMING LANGUAGE",
-          proficiency: 4
-        }
-      }
-    },
-    /*{
-      skillName: "TypeScript",
-      iconData: {
-        link: "https://www.typescriptlang.org/",
-        icon: require("./assets/images/TypeScript.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/ts.webp"),
-        tooltip: {
-          name: "TypeScript",
-          type: "PROGRAMMING LANGUAGE",
-          proficiency: 3
-        }
-      }
-    },{
-      skillName: "JavaScript",
-      iconData: {
-        link: "https://www.javascript.com/",
-        icon: require("./assets/images/js.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/jsComposit.webp"),
-        tooltip: {
-          name: "JavaScript",
-          type: "PROGRAMMING LANGUAGE",
-          proficiency: 3
-        }
-      }
-    },*/
-    {
-      skillName: "Unreal 4",
-      iconData: {
-        link: "https://www.unrealengine.com/en-US/",
-        icon: require("./assets/images/ue4Desat.webp"),
-        saturatedIcon: require("./assets/images/ue4.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/ue4.webp"),
-        tooltip: {
-          name: "Unreal Engine 4",
-          type: "GAME ENGINE",
-          proficiency: 5
-        }
-      }
-    },
-    {
-      skillName: "Unity",
-      iconData: {
-        link: "https://unity.com/",
-        icon: require("./assets/images/unityDesat.webp"),
-        saturatedIcon: require("./assets/images/unitySat.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/unityComposit.webp"),
-        tooltip: {
-          name: "Unity",
-          type: "GAME ENGINE",
-          proficiency: 4
-        }
-      }
-    },
-    {
-      skillName: "Blender",
-      iconData: {
-        link: "https://www.blender.org/",
-        icon: require("./assets/images/blender_icon_64x64.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/blenderComposit.webp"),
-        tooltip: {
-          name: "Blender",
-          type: "3D MODELING TOOL",
-          proficiency: 5
         }
       }
     },
@@ -422,148 +306,19 @@ https://fontawesome.com/icons?d=gallery */
         }
       }
     },
-    /*{
-      skillName: "Switch SDK",
-      iconData: {
-        link: "https://developer.nintendo.com/",
-        icon: require("./assets/images/ndiDesat.webp"),
-        saturatedIcon: require("./assets/images/ndi.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/ndiComposit.webp"),
-        tooltip: {
-          name: "Nintendo Switch SDK",
-          type: "API/SDK",
-          proficiency: 3
-        }
-      }
-    },*/
     {
-      skillName: "Direct X 12",
+      skillName: "Blender",
       iconData: {
-        link: "https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-reference",
-        icon: require("./assets/images/d3d12_desat.webp"),
-        saturatedIcon: require("./assets/images/d3d12.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/d3d12-2.webp"),
+        link: "https://www.blender.org/",
+        icon: require("./assets/images/blender_icon_64x64.webp"),
+        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/blenderComposit.webp"),
         tooltip: {
-          name: "Direct X 12",
-          type: "GRAPHICS API",
-          proficiency: 4
-        }
-      }
-    },
-    {
-      skillName: "OpenGL",
-      iconData: {
-        link: "https://www.opengl.org//",
-        icon: require("./assets/images/openglDesat.webp"),
-        saturatedIcon: require("./assets/images/opengl.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/glComposit.webp"),
-        tooltip: {
-          name: "OpenGL",
-          type: "GRAPHICS API",
-          proficiency: 4
-        }
-      }
-    },
-    {
-      skillName: "WebGL",
-      iconData: {
-        link: "https://www.khronos.org/webgl/",
-        icon: require("./assets/images/WebGL_LogoDeSat.webp"),
-        saturatedIcon: require("./assets/images/WebGL_Logo.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/glComposit.webp"),
-        tooltip: {
-          name: "WebGL",
-          type: "GRAPHICS API",
-          proficiency: 4
-        }
-      }
-    },
-    /*{
-      skillName: "Discord API",
-      iconData: {
-        link: "https://discord.com/developers/docs/intro",
-        icon: require("./assets/images/Discord-Logo-Color.webp"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/discordComposit.webp"),
-        tooltip: {
-          name: "Discord API",
-          type: "API (JS, PYTHON, C#)",
+          name: "Blender",
+          type: "3D MODELING TOOL",
           proficiency: 5
         }
       }
     }
-  ],*/
-  /*
-  unusedSoftwareSkills:[ {
-    skillName: "Java",
-    iconData: {
-      link: "https://www.java.com/en/",
-      icon: require("./assets/images/java.png"),
-      boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/javaComposit.png"),
-      tooltip: {
-        name: "Java",
-        type: "PROGRAMMING LANGUAGE",
-        proficiency: 4
-        }
-      }
-    },
-    {
-      skillName: "Rider",
-      iconData: {
-        link: "https://www.jetbrains.com/rider/",
-        icon: require("./assets/images/rider.png"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/riderComposit.png"),
-        tooltip: {
-          name: "Rider",
-          type: "IDE",
-          proficiency: 5
-        }
-      }
-    },
-    {
-      skillName: "ReSharper",
-      iconData: {
-        link: "https://www.jetbrains.com/resharper-cpp/",
-        icon: require("./assets/images/resharper.png"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/resharperComposit.png"),
-        tooltip: {
-          name: "ReSharper",
-          type: "VS EXTENSION",
-          proficiency: 2
-        }
-      }
-    },
-    {
-      skillName: "IntelliJ IDEA",
-      iconData: {
-        link: "https://www.jetbrains.com/idea/",
-        icon: require("./assets/images/intellij.png"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/ideaComposit.png"),
-        tooltip: {
-          name: "IntelliJ IDEA",
-          type: "IDE",
-          relatedProjects: [
-            {
-              description: "Enigma Example Project",
-              link: "https://github.com/ShaikaJar/Enigma"
-            }
-          ],
-          proficiency: 4
-        }
-      }
-    },
-    {
-      skillName: "WebStorm",
-      iconData: {
-        link: "https://www.jetbrains.com/webstorm/",
-        icon: require("./assets/images/webstorm.png"),
-        boidForceTexture: require("./submodules/WebGL-Boids/forceFieldTextureCreator/mediaOut/webstormComposit.png"),
-        tooltip: {
-          name: "WebStorm",
-          type: "IDE",
-          proficiency: 3
-        }
-      }
-    },*/
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -582,7 +337,7 @@ const educationInfo = {
         {
           subHeader: "Computer Science Master",
           start: 202310,
-          end: presentNum,
+          end: 202511,
           desc: "CS master with a personal focus on:",
           descBullets: [
             "Algorithm design",
@@ -594,13 +349,8 @@ const educationInfo = {
           subHeader: "Games Engineering Bachelor",
           start: 201909,
           end: 202309,
-          desc: "Received highest grade for all Games Engineering projects:",
+          desc: "Programmed various games and demos.",
           descBullets: [
-            "GameLab I: EmptySpaces",
-            "GameLab II: Balancing Hub",
-            "GameLab III: Fractal Engine & Minesweeper",
-            "Movie Making with Game Engines",
-            "Seminar Current Trends in Games Engineering: Automated Animation of Creatures"
           ]
         }
       ]
@@ -652,9 +402,23 @@ const workExperiences = {
       url: "https://www.amd.com/",
       items: [
         {
+          subHeader: "Sr. Software Engineering",
+          start: 202511,
+          end: presentNum,
+          desc: "Working on the FSR SDK",
+          descBullets: ["Shipped FSR4 on RDNA3", "Shipped improved Framepacing"],
+        },
+        {
+          subHeader: "Software Engineering",
+          start: 202504,
+          end: 202510,
+          desc: "Wrote a masters thesis on heuristics to decide whether to rebuild or refit an animated BVH in the next frame.",
+          descBullets: [],
+        },
+        {
           subHeader: "Software Engineering Working Student",
           start: 202304,
-          end: presentNum,
+          end: 202503,
           desc: "Research Work on GPU Workgraphs and Geometry Processing.",
           descBullets: ["Worked on the GPU Workgraphs Demo presented at GDC 2024"],
         },
@@ -675,8 +439,8 @@ const workExperiences = {
         {
           subHeader: "Computer Graphics Lecturer",
           start: 202404,
-          end: presentNum,
-          desc: "Created and held a Computer Graphics Lecture containing nine units. It was accompanied by an exercise in OpenGl. Currently i am supervising a Bachelors Thesis at the University.",
+          end: 202507,
+          desc: "Created and held a Computer Graphics Lecture containing nine units. It was accompanied by an exercise in OpenGl.",
           descBullets: [],
         }
       ]
@@ -804,15 +568,166 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // GameJams Section
 
 const gameJams = {
-  title: "Small Projects & Game Jams",
-  subtitle: "MADE DURING GAME JAMS OR OTHER SMALLER TIME PERIODS",
-  projects: [
+  title: "Projects, Games and Demos",
+  subtitle: "A collection of my projects with various scopes.",
+  projects: [ 
+     {
+      video: require("./assets/videos/carsick.webm"),
+      image: require("./assets/images/carsick.webp"),
+      projectName: "",
+      projectDesc:
+        "An interactive Story experience.",
+      footerLink: [
+        {
+          name: "Play the game",
+          url: "https://ahintoflime.itch.io/carsick"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+     {
+      video: require("./assets/videos/indemnity.webm"),
+      image: require("./assets/images/indemnitysignal.webp"),
+      projectName: "",
+      projectDesc:
+        "A puzzle game with a printable manual.",
+      footerLink: [
+        {
+          name: "Play the game",
+          url: "https://gyrium.itch.io/indemnity-signal"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      video: require("./assets/videos/gptree.webm"),
+      image: require("./assets/images/gptree.webp"),
+      projectName: "Procedural Trees",
+      projectDesc:
+        "Generating and Rendering Trees in Workgraphs.",
+      footerLink: [
+        {
+          name: "Read the Paper",
+          url: "hthttps://gpuopen.com/download/Real-Time_GPU_Tree_Generation.pdf"
+        },
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      video: require("./assets/videos/gdc24-sml.webm"),
+      image: require("./assets/images/ivy.webp"),
+      projectName: "GDC24 Demo",
+      projectDesc:
+        "GPU Workgraphs Demo from AMD.",
+      footerLink: [
+        {
+          name: "Blog Post",
+          url: "https://gpuopen.com/learn/gdc-2024-workgraphs-drawcalls/"
+        },
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      video: require("./assets/videos/fractalWebSnippet.webm"),
+      image: require("./assets/images/fractalEngineLogo.webp"),
+      projectName: "",
+      projectDesc:
+        "Minesweeper for nintendo switch.",
+      footerLink: [
+        {
+          name: "Project Page",
+          url: "./fractal-engine"
+        },
+        {
+          name: "Watch Trailer",
+          url: "https://www.youtube.com/watch?v=73KvNSI9d8c"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      video: require("./assets/videos/HauntedForest.webm"),
+      image: require("./assets/images/mmwge.webp"),
+      projectName: "BrightnessBasedTextureLayering",
+      projectDesc:
+        "Postprocessing Fun",
+      footerLink: [
+        {
+          name: "Project Movie",
+          url: "https://motiondesign101.de/filme/texture-worlds/"
+        },
+        {
+          name: "Download on Itch.io",
+          url: "https://darkblizzard.itch.io/texturelayering"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      video: require("./assets/projects/rayvis/rayvis-preview.webm"),
+      image: require("./assets/images/empty.webp"),
+      projectName: "RayVis",
+      projectDesc: "Raytracing visualization.",
+      footerLink: [
+        {
+          name: "Project Page",
+          url: "./rayvis"
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/Darkblizzard21/rgb-website"
+        }
+      ]
+    },
+    {
+      video: require("./assets/videos/EmptySpaces.webm"),
+      image: require("./assets/images/emptySpaces.webp"),
+      projectName: "Empty Spaces",
+      projectDesc:
+        "Bullet-Hell-Twin-Stick-Shooters-Metroidvania",
+      footerLink: [
+        {
+          name: "Watch Trailer",
+          url: "https://www.youtube.com/watch?v=7nlux89EjxY"
+        },
+        {
+          name: "Download on Itch.io",
+          url: "https://darkblizzard.itch.io/emptyspaces"
+        }
+      ]
+    },
+    {
+      video: require("./assets/videos/mrpickles.webm"),
+      image: require("./assets/images/empty.webp"),
+      projectName: "",
+      projectDesc:
+        "",
+      footerLink: [
+        {
+          name: "Download on Itch.io",
+          url: "https://darkblizzard.itch.io/mr-pickles"
+        }
+      ]
+    },
+    {
+      video: require("./assets/videos/projectMog.webm"),
+      image: require("./assets/images/empty.webp"),
+      projectName: "",
+      projectDesc:
+        "A small multiplayer online game",
+      footerLink: [
+        {
+          name: "Download on Itch.io",
+          url: "https://yeslayla.itch.io/project-mog"
+        }
+      ]
+    },
     {
       video: require("./assets/videos/boids.webm"),
       image: require("./assets/images/boidLogo.webp"),
@@ -841,20 +756,6 @@ const gameJams = {
           name: "GitHub",
           url: "https://github.com/Darkblizzard21/MGJ-Chicken"
         }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      video: require("./assets/videos/gdc24-sml.webm"),
-      image: require("./assets/images/ivy.webp"),
-      projectName: "GDC24 Demo",
-      projectDesc:
-        "GPU Workgraphs Demo from AMD.",
-      footerLink: [
-        {
-          name: "Blog Post",
-          url: "https://gpuopen.com/learn/gdc-2024-workgraphs-drawcalls/"
-        },
         //  you can add extra buttons here.
       ]
     },
@@ -935,25 +836,8 @@ const gameJams = {
 
 const referencesSection = {
   references: [
-    {
-      name: "Prof. Dr. Sebastian von Mammen",
-      jobTitle: "Professor of Games Engineering",
-      organization: "Julius-Maximilians University",
-      location: "Würzburg, Germany",
-      website: "http://hci.uni-wuerzburg.de/people/sebastian-von-mammen/",
-      email: "sebastian.von.mammen@uni-wuerzburg.de",
-      image: require("./assets/images/GE-logo.webp")
-    },
-    {
-      name: "Daniel Götz",
-      jobTitle: "COO and Software Engineer",
-      organization: "Building Information Innovator GmbH",
-      location: "Würzburg, Germany",
-      website: "https://www.bii-gmbh.com/",
-      email: "goetz@bii-gmbh.com",
-      image: require("./assets/images/bii2.webp")
-    }
-  ]
+  ],
+  display: false
 };
 
 // Achievement Section
@@ -964,6 +848,42 @@ const achievementSection = {
   subtitle: "Honors and Scholarships i received",
 
   achievementsCards: [
+    {
+      title: "Game of the Jam",
+      subtitle:
+        "Won the \"Game of the Jam\" award at Castle GameJam 2026 with CarSick",
+      image: require("./assets/images/castle-game-jam.webp"),
+      footerLink: [
+        {
+          name: "Game Page",
+          url: "https://ahintoflime.itch.io/carsick"
+        }
+      ]
+    },
+    {
+      title: "Game of the Jam",
+      subtitle:
+        "Won the \"Game of the Jam\" award at Midsummer GameJam 2025 with Indemnity Signal",
+      image: require("./assets/images/spel.webp"),
+      footerLink: [
+        {
+          name: "Game Page",
+          url: "https://gyrium.itch.io/indemnity-signal"
+        }
+      ]
+    },
+    {
+      title: "Wolfgang Straßer Award",
+      subtitle:
+        "Won 2nd place at HPG2026 for Real-Time GPU Tree Generation together with my colleagues",
+      image: require("./assets/images/HPGwhite.svg").default,
+      footerLink: [
+        {
+          name: "Conference Page",
+          url: "https://highperformancegraphics.org/2025/program/best-paper//"
+        }
+      ]
+    },
     {
       title: "Deutschlandstipendium 2022",
       subtitle:

@@ -7,7 +7,9 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function References() {
   const {isDark} = useContext(StyleContext);
-
+  if( !referencesSection.display) {
+    return (<div></div>)
+  }
   return (
     <div id="references" className="main">
       <h1 className="ref-title">References</h1>
