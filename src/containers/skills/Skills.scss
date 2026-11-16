@@ -1,9 +1,26 @@
 @import "../../_globalColor";
 
+// Lift the whole section above following sections (whose react-reveal
+// transforms create their own stacking contexts) so skill tooltips that
+// extend past the bottom of this section are not covered.
+#skills {
+  position: relative;
+  z-index: 2;
+}
+
 .skills-main-div {
   display: flex;
   width: 100%;
   overflow: hidden;
+}
+
+// Clip only horizontally (keeps the slide-in animation from causing horizontal
+// scroll) so skill tooltips can extend below the section.
+@supports (overflow-x: clip) {
+  .skills-main-div {
+    overflow-x: clip;
+    overflow-y: visible;
+  }
 }
 
 .skills-text-div {
