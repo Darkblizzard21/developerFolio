@@ -24,7 +24,11 @@ export default function Projects() {
           throw result;
         })
         .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
+          // GitHub returns null nodes for pinned repos the token cannot see
+          const edges = (
+            response?.data?.user?.pinnedItems?.edges ?? []
+          ).filter(edge => edge && edge.node);
+          setrepoFunction(edges.length > 0 ? edges : "Error");
         })
         .catch(function (error) {
           console.error(
@@ -48,16 +52,9 @@ export default function Projects() {
         <div className="main" id="opensource">
           <h1 className="project-title">Some Public GitHub Projects</h1>
           <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
-                );
-              }
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
+            {repo.map(v => (
+              <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
+            ))}
           </div>
           <Button
             text={"More Projects"}
